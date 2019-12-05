@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('configuracion', 'UserController@config')->name('config');
 Route::post('usuario/actualizar', 'UserController@update')->name('user.update');
+Route::get('usuario/avatar/{filename}', 'UserController@getImage')->name('user.avatar');
