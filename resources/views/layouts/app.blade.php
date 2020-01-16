@@ -50,10 +50,10 @@
                             </li>
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="">Inicio</a>
+                                <a href="{{ route('home') }}" class="nav-link" href="">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                    <a class="nav-link" href="">Subir photo</a>
+                                <a href="{{ route('image.create') }}" class="nav-link" href="">Subir photo</a>
                             </li>
                             <li>
                                 @include('includes.avatar')

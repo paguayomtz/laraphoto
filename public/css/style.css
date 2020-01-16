@@ -3,7 +3,8 @@ form .avatar {
     margin-bottom: 15px;
 }
 
-.navbar .container-avatar {
+.navbar .container-avatar, 
+.pub-image .container-avatar {
     width: 35px;
     height: 35px;
     border-radius: 900px;
@@ -11,8 +12,67 @@ form .avatar {
     margin-left: 20px;
 }
 
-.navbar .container-avatar img {
+.navbar .container-avatar img,
+.pub-image .container-avatar img {
     height: 100%;
+}
+
+.pub-image {
+    margin-bottom: 25px;
+}
+
+.pub-image .container-avatar {
+    float: left;
+    margin-right: 15px;
+}
+
+.pub-image .data-user {
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.pub-image .data-user a {
+    color: #444;
+}
+
+.pub-image .nickname {
+    color: gray;
+    font-weight: bold;
+}
+
+.img-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.pub-image .card-body {
+    padding: 0px;
+}
+
+.card-body .description {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.card-body .btn-comments {
+    margin: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.likes {
+    float: left;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.likes img {
+    width: 20px;
 }
 
 
