@@ -16,9 +16,7 @@
                         <div class="data-user">
                             <a href="{{route('image.detail', ['id' => $image->id])}}">
                                 {{ $image->user->name.' '.$image->user->surname }}
-                                <span class="nickname">
-                                    {{ ' | @'.$image->user->nick }}
-                                </span>
+                                <span class="nickname"> {{ ' | @'.$image->user->nick }} </span>                                
                             </a>
                         </div>
                     </div>                
@@ -28,6 +26,7 @@
                         </div>
                         <div class="description">
                             <span class="nickname">{{ '@'.$image->user->nick }}</span>
+                            <span class="nickname">{{ ' | '.\FormatTime::LongTimeFilter($image->created_at) }}</span>
                             <p>{{ $image->description }}</p>
                         </div>
                         <div class="likes">
