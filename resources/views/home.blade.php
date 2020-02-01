@@ -32,7 +32,7 @@
                         <div class="likes">
                             <img src="{{ asset('img/heart-gray.png') }}">
                         </div>
-                        <div class="commnets">
+                        <div class="comments">
                             <a href="" class="btn btn-sm btn-warning btn-comments">
                                 Comentarios ({{ count($image->comments) }})
                             </a>
